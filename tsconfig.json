@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "allowJs": true,
+    "jsx": "react",
+    "resolveJsonModule": true,
+    "noImplicitAny": false,
+    "strictNullChecks": true,
+    "esModuleInterop": true,
+    "target": "ES6",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "lib": ["es5", "es6", "es2015", "es2016","es2017","es2018", "es2019", "dom"],
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"],
+      "@test/*": ["test/*"],
+      "@mocks/*": ["test/util/mocks/*"]
+    },
+    "typeRoots": [
+      "./node_modules/@types",
+      "./src/types",
+      "./types"
+    ],
+    "types": ["vue", "node"]
+  },
+  "include": ["src/**/*.ts", "src/**/*.js"],
+  "exclude": ["node_modules", "dist", "__tests__"]
+}
